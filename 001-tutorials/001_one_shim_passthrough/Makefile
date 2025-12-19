@@ -1,6 +1,6 @@
 srcdir := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 
-include ${srcdir}/../../../../programming_examples/makefile-common
+include ${srcdir}/makefile-common
 
 devicename ?= $(if $(filter 1,$(NPU2)),npu2,npu)
 targetname ?= distribute_and_join_L2
